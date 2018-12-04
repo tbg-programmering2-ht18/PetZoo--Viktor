@@ -18,15 +18,15 @@ namespace PetZoo
         {
             if (CanFly == true)
             {
-                return string.Format("name: {0}\nsound: {1}\nType: {2} and can fly!!," ,name, sound, GetType());
+                return string.Format("name: {0}\nsound: {1}\nType: {2} and can fly!!,", name, sound, GetType());
             }
             else
             {
-                return string.Format("name: {0}\nsound: {1}\nType: {2} and can fly!!," ,name, sound, GetType());
+                return string.Format("name: {0}\nsound: {1}\nType: {2} and can fly!!,", name, sound, GetType());
             }
         }
     }
-}   
+}
     
 class Dinosaur
 {
