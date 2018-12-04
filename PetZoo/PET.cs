@@ -8,10 +8,28 @@ namespace PetZoo
 {
     class PET
     {
-        
-        public string name  {get; set;}
-        public int id {get; set;}
-        public int age { get; set; }
-        
+
+        public string name { get; set; }
+        public string sound { get; set; }
+        public bool CanFly { get; set; }
+
+
+        public string show()
+        {
+            if (CanFly == true)
+            {
+                return string.Format("name: {0}\nsound: {1}\nType: {2} and can fly!!," ,name, sound, GetType());
+            }
+            else
+            {
+                return string.Format("name: {0}\nsound: {1}\nType: {2} and can fly!!," ,name, sound, GetType());
+            }
+        }
     }
+}   
+    
+class Dinosaur
+{
+    public string name { get; set; }
+
 }
