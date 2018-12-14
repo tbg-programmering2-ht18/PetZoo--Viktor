@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PetZoo
 {
-    class PET
+    class Pet
     {
 
         public string name { get; set; }
@@ -26,10 +26,20 @@ namespace PetZoo
             }
         }
     }
-}
-    
-class Dinosaur
-{
-    public string name { get; set; }
+    class Dinosaur :Pet
+    {
+        
+        public Dinosaur(string name)
+        {
+
+           this.name = name;
+            sound = "Rawr";
+            CanFly = false;
+        }
+        
+
+       
+    }
 
 }
+

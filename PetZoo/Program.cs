@@ -8,17 +8,22 @@ namespace PetZoo
 {
     class Program
     {
-        static List<PET> animals = new List<PET>();
+        static List<Pet> animals = new List<Pet>();
         static void Main(string[] args)
         {
-            PET animal1 = new PET();
+            Pet animal1 = new Pet();
             animal1.name = "Gullet";
             animals.Add((animal1));
-            PET animal2 = new PET();
+            Pet animal2 = new Pet();
             animal2.name = "Berit";
             animals.Add((animal2));
 
-            animals.Add(new cat()
+            foreach (Pet animal in animals)
+            {
+                Console.WriteLine(animal.name);
+            }
+            Console.ReadKey();
+            
         }
     }
 }
