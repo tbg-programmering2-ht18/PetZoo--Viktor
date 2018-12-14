@@ -34,7 +34,7 @@ namespace PetZoo
 
            this.name = name;
             sound = "Rawr";
-            CanFly = false;
+            CanFly = false; //hej
         }
         
 
